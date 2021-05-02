@@ -96,13 +96,17 @@ loadImages((images) => {
 
         if(key === "ArrowLeft"){
             queuedAnimations.push("backward");
+            setTimeout(audiobackward.play(),2000);
         } else if(key === "ArrowRight"){
             queuedAnimations.push("forward");
+            setTimeout(audioforward.play(),2000);
         } else if(key === "ArrowUp"){
             queuedAnimations.push("kick");
+            setTimeout(audiokick.play(),2000);
         }
         else if(key === "ArrowDown"){
             queuedAnimations.push("punch");
+            setTimeout(audiopunch.play(),2000);
         }
     })
 
