@@ -34,6 +34,25 @@
             font-size:14px;
             border: 1px solid black;
         }
+        @media (min-width: 320px) and (max-width: 1023px)
+        {
+            p{
+
+            }
+            .can{
+                margin-left:-70px;
+                float:none;
+                margin-bottom:-100px;
+                margin-top:-50px;
+            }
+            button{
+                margin-left:60px;
+                width:100px;
+                font-size:12px;
+                height:35px;
+            }
+
+        }
     </style>
 </head>
 <body>
@@ -45,8 +64,7 @@
     </div>
     <div class="but">
         <ul>
-            <li><button id="kick" onclick=
-                '$.playSound("http://tusharbaheti28.000webhostapp.com/notification.mp3")'>Kick<br>(ArrowUp) </button></li>
+            <li><button id="kick">Kick<br>(ArrowUp) </button></li>
             <li><button id="punch">Punch <br>(ArrowDown) </button></li>
             <li> <button id="forward">Forward <br>(ArrowRight) </button></li>
             <li> <button id="backward">Backward <br>(ArrowLeft)</button></li>
